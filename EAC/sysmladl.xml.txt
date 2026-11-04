@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" modified="2026-11-04T04:30:00.000Z" agent="Gemini" version="21.0.0" type="device">
+  <diagram name="IDEF-ARTS-ADL Enterprise Architecture" id="idef-arts-adl-1">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Domain 1: IDEF0 Functional Modeling View -->
+        <mxCell id="idef_bg" value="IDEF0 Functional Architecture (Inputs, Controls, Outputs, Mechanisms - ICOM)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#0E6251;fillColor=#E8F8F5;strokeColor=#1ABC9C;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="1220" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="idef_input" value="Input: Raw Enterprise Data &amp; Events" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="idef_bg">
+          <mxGeometry x="40" y="80" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="idef_control" value="Control: Policies, Governance &amp; Compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="idef_bg">
+          <mxGeometry x="270" y="40" width="220" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="idef_process" value="A1: Enterprise Core Processing Node&#xa;(IDEF0 Functional Transformation)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#76D7C4;strokeColor=#117A65;fontColor=#0B5345;fontStyle=1;" vertex="1" parent="idef_bg">
+          <mxGeometry x="270" y="110" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="idef_mechanism" value="Mechanism: Cloud Infrastructure &amp; Compute" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="idef_bg">
+          <mxGeometry x="270" y="200" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idef_output" value="Output: Verified Enterprise Transactions &amp; Analytics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="idef_bg">
+          <mxGeometry x="540" y="80" width="220" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Domain 2: ARTS Enterprise Data Model Repository -->
+        <mxCell id="arts_bg" value="ARTS Data Model (Unified Enterprise &amp; Retail Data Architecture)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#1B4F72;fillColor=#EBF5FB;strokeColor=#3498DB;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="1220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="arts_customer" value="Customer Domain&#xa;(ARTS CDM)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="arts_bg">
+          <mxGeometry x="60" y="60" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="arts_merchandise" value="Merchandise &amp; Product&#xa;(ARTS Merchandising Model)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="arts_bg">
+          <mxGeometry x="320" y="60" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="arts_pos" value="Store Operations &amp; POS&#xa;(ARTS POS / Transaction Model)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="arts_bg">
+          <mxGeometry x="580" y="60" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="arts_supply" value="Supply Chain &amp; Logistics&#xa;(ARTS Inventory Model)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="arts_bg">
+          <mxGeometry x="840" y="60" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Domain 3: ADL / Pi-ADL / SYML Behavioral & Component Architecture -->
+        <mxCell id="adl_bg" value="Architecture Description Language (SYML / Pi-ADL: Concurrent Components &amp; Channels)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#7D6608;fillColor=#FEF9E7;strokeColor=#F1C40F;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="1220" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="adl_comp1" value="Component: EventSource&#xa;[Pi-ADL Process P]" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontColor=#7D6608;" vertex="1" parent="adl_bg">
+          <mxGeometry x="80" y="60" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="adl_connector" value="Pi-Calculus Communication Channel&#xa;(CH: sync / asynchronous binding)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAD7A0;strokeColor=#E67E22;fontColor=#784212;fontStyle=1;" vertex="1" parent="adl_bg">
+          <mxGeometry x="390" y="75" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="adl_comp2" value="Component: StateSink&#xa;[Pi-ADL Process Q]" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontColor=#7D6608;" vertex="1" parent="adl_bg">
+          <mxGeometry x="710" y="60" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Connections & Data Flows -->
+        <mxCell id="c1" edge="1" parent="1" source="idef_input" target="idef_process">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="idef_control" target="idef_process">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="idef_mechanism" target="idef_process">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="idef_process" target="idef_output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" edge="1" parent="1" source="idef_output" target="arts_customer">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="270"/>
+              <mxPoint x="170" y="270"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c6" edge="1" parent="1" source="arts_pos" target="adl_comp1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="470"/>
+              <mxPoint x="190" y="470"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c7" edge="1" parent="1" source="adl_comp1" target="adl_connector">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" edge="1" parent="1" source="adl_connector" target="adl_comp2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

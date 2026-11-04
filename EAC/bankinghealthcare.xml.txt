@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" modified="2026-11-04T04:20:00.000Z" agent="Gemini" version="21.0.0" type="device">
+  <diagram name="Expanded TOGAF FinHealth Architecture" id="togaf-finhealth-expanded">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1050" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- TOGAF Phase B: Business Architecture Layer -->
+        <mxCell id="layer1_bus" value="TOGAF Phase B: Business Architecture (Channels, Stakeholders &amp; Governance)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#0E6251;fillColor=#E8F8F5;strokeColor=#1ABC9C;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="1300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="biz_patient" value="Patient / Consumer Portal&#xa;(HSA, Medical Loans, Telehealth)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="layer1_bus">
+          <mxGeometry x="50" y="45" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="biz_provider" value="Healthcare Provider Portal&#xa;(EHR Integration, Billing, Care Plans)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="layer1_bus">
+          <mxGeometry x="350" y="45" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="biz_insurer" value="Insurer &amp; Underwriter Hub&#xa;(Risk Assessment &amp; Policy Mgmt)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="layer1_bus">
+          <mxGeometry x="650" y="45" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="biz_regulator" value="Regulatory &amp; Audit Oversight&#xa;(HIPAA, PCI-DSS, Basel III Compliance)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="layer1_bus">
+          <mxGeometry x="950" y="45" width="280" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- TOGAF Phase C: Application Architecture Layer -->
+        <mxCell id="layer2_app" value="TOGAF Phase C: Application Architecture (Services, APIs &amp; Emerging Tech Engines)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#1B4F72;fillColor=#EBF5FB;strokeColor=#3498DB;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="1300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="app_gw" value="Dual API Gateway &amp; Mesh&#xa;(HL7/FHIR &amp; Open Banking REST/GraphQL)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="layer2_app">
+          <mxGeometry x="50" y="45" width="230" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="app_micro_bank" value="Core Banking Services&#xa;(Accounts, Loans, Payments)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="layer2_app">
+          <mxGeometry x="300" y="45" width="220" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="app_micro_health" value="Claims &amp; Adjudication Engine&#xa;(Medical Billing &amp; Workflow)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="layer2_app">
+          <mxGeometry x="540" y="45" width="220" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="app_ai" value="AI / ML Intelligence Unit&#xa;(Underwriting, RAG LLMs, Fraud Detection)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="layer2_app">
+          <mxGeometry x="780" y="45" width="220" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="app_bc" value="Blockchain Smart Contracts&#xa;(Automated Settlement DLT Hub)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="layer2_app">
+          <mxGeometry x="1020" y="45" width="230" height="105" as="geometry" />
+        </mxCell>
+
+        <!-- TOGAF Phase C: Data Architecture Layer -->
+        <mxCell id="layer3_data" value="TOGAF Phase C: Data Architecture (Storage, Federated Lakes &amp; Ledgers)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#6E2C00;fillColor=#FBEEE6;strokeColor=#E67E22;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="1300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="data_lake" value="Federated Cloud Data Lake&#xa;(Encrypted PHI / PII Object Storage)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5CBA7;strokeColor=#D35400;fontColor=#6E2C00;" vertex="1" parent="layer3_data">
+          <mxGeometry x="50" y="45" width="230" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="data_vector" value="Vector Database&#xa;(Clinical Embeddings &amp; RAG Knowledge)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5CBA7;strokeColor=#D35400;fontColor=#6E2C00;" vertex="1" parent="layer3_data">
+          <mxGeometry x="300" y="45" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="data_rel" value="Operational Relational / NoSQL DB&#xa;(PostgreSQL &amp; MongoDB FinHealth Indexes)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5CBA7;strokeColor=#D35400;fontColor=#6E2C00;" vertex="1" parent="layer3_data">
+          <mxGeometry x="540" y="45" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="data_cache" value="In-Memory Cache / Event Stream&#xa;(Redis &amp; Apache Kafka Message Bus)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5CBA7;strokeColor=#D35400;fontColor=#6E2C00;" vertex="1" parent="layer3_data">
+          <mxGeometry x="780" y="45" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="data_ledger" value="Immutable Ledger DB&#xa;(Cryptographic Audit State)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5CBA7;strokeColor=#D35400;fontColor=#6E2C00;" vertex="1" parent="layer3_data">
+          <mxGeometry x="1020" y="45" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- TOGAF Phase D: Technology & Infrastructure Architecture Layer -->
+        <mxCell id="layer4_tech" value="TOGAF Phase D: Technology &amp; Infrastructure Architecture (Cloud, Edge, Security &amp; DevOps)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#512E5F;fillColor=#F4ECF7;strokeColor=#8E44AD;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="1300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="tech_cloud" value="Multi-Cloud VPCs &amp; Containers&#xa;(AWS/Azure Kubernetes Service &amp; Istio Mesh)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#7D3C98;fontColor=#512E5F;" vertex="1" parent="layer4_tech">
+          <mxGeometry x="50" y="45" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tech_iot" value="IoT &amp; Edge Processing Gateways&#xa;(Remote Patient Vitals, MQTT Telemetry &amp; Local Buffers)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#7D3C98;fontColor=#512E5F;" vertex="1" parent="layer4_tech">
+          <mxGeometry x="380" y="45" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tech_security" value="Zero Trust Security, IAM &amp; Key Vault&#xa;(RBAC, Hardware Security Modules, TLS 1.3 Encryption)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#7D3C98;fontColor=#512E5F;" vertex="1" parent="layer4_tech">
+          <mxGeometry x="730" y="45" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tech_devops" value="Observability &amp; CI/CD Pipelines&#xa;(Prometheus, Grafana, Automated Compliance Scanning)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7BDE2;strokeColor=#7D3C98;fontColor=#512E5F;" vertex="1" parent="layer4_tech">
+          <mxGeometry x="1040" y="45" width="210" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Connections / Inter-Layer Flows -->
+        <mxCell id="c1" edge="1" parent="1" source="biz_patient" target="app_gw">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="app_gw" target="app_micro_bank">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="app_gw" target="app_micro_health">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="app_micro_health" target="app_ai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" edge="1" parent="1" source="app_micro_bank" target="app_bc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" edge="1" parent="1" source="app_ai" target="data_vector">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" edge="1" parent="1" source="app_bc" target="data_ledger">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" edge="1" parent="1" source="tech_iot" target="app_gw">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="500"/>
+              <mxPoint x="165" y="500"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

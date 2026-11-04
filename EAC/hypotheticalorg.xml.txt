@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2026-11-04T04:35:00.000Z" agent="Gemini" version="21.0.0" type="device">
+  <diagram name="Hypothetical EA Framework with Analysis" id="ea-analysis-framework-1">
+    <mxGraphModel dx="1500" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1350" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Pillar 1: Strategy & Business Architecture -->
+        <mxCell id="layer1_bus" value="1. Business Strategy &amp; Governance Layer (OmniCorp)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#0E6251;fillColor=#E8F8F5;strokeColor=#1ABC9C;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="30" width="1220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="biz_strategy" value="Corporate Strategy &amp; Objectives&#xa;(Market Expansion &amp; Digital Transformation)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="layer1_bus">
+          <mxGeometry x="60" y="45" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="biz_capabilities" value="Business Capabilities Model&#xa;(Supply Chain, Retail POS, Fintech Services)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="layer1_bus">
+          <mxGeometry x="440" y="45" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="biz_governance" value="Enterprise Risk &amp; Compliance&#xa;(Regulatory Standards &amp; ESG Metrics)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A3E4D7;strokeColor=#16A085;fontColor=#0E6251;" vertex="1" parent="layer1_bus">
+          <mxGeometry x="820" y="45" width="340" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Pillar 2: Enterprise Analysis Component (The Core Focus) -->
+        <mxCell id="layer2_analysis" value="2. Enterprise Analysis &amp; Intelligence Hub (Core Decision Engine)" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#7D6608;fillColor=#FEF9E7;strokeColor=#F1C40F;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="160" width="1220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ana_gap" value="EA Gap &amp; Impact Analysis&#xa;(As-Is vs To-Be Transition Planning)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontColor=#7D6608;" vertex="1" parent="layer2_analysis">
+          <mxGeometry x="60" y="50" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ana_pred" value="Predictive Business Analytics&#xa;(Demand Forecasting &amp; Risk Modeling)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontColor=#7D6608;" vertex="1" parent="layer2_analysis">
+          <mxGeometry x="350" y="50" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ana_perf" value="Operational Performance Metrics&#xa;(KPIs, Cost-Benefit &amp; ROI Auditing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontColor=#7D6608;" vertex="1" parent="layer2_analysis">
+          <mxGeometry x="640" y="50" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ana_dash" value="Executive Decision Dashboards&#xa;(BI &amp; Automated EA Roadmapping)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontColor=#7D6608;" vertex="1" parent="layer2_analysis">
+          <mxGeometry x="930" y="50" width="230" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Pillar 3: Application & Integration Layer -->
+        <mxCell id="layer3_app" value="3. Application &amp; Integration Architecture Layer" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#1B4F72;fillColor=#EBF5FB;strokeColor=#3498DB;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="1220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="app_gw" value="Enterprise API Gateway &amp; Mesh&#xa;(REST / GraphQL / gRPC Routing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="layer3_app">
+          <mxGeometry x="60" y="45" width="360" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="app_micro" value="Cloud Microservices Suite&#xa;(Inventory, Order Processing, Billing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="layer3_app">
+          <mxGeometry x="460" y="45" width="360" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="app_ai" value="AI &amp; Machine Learning Engines&#xa;(RAG LLMs &amp; Decision Support)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AED6F1;strokeColor=#2980B9;fontColor=#1B4F72;" vertex="1" parent="layer3_app">
+          <mxGeometry x="860" y="45" width="300" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- Pillar 4: Data & Infrastructure Layer -->
+        <mxCell id="layer4_data" value="4. Data, Cloud &amp; Infrastructure Layer" style="swimlane;fontStyle=1;horizontal=1;startSize=30;rounded=1;fontSize=13;fontColor=#6E2C00;fillColor=#FBEEE6;strokeColor=#E67E22;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="490" width="1220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="data_lake" value="Enterprise Data Lake &amp; Warehouse&#xa;(Cloud Storage &amp; Vector DB for Analytics)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5CBA7;strokeColor=#D35400;fontColor=#6E2C00;" vertex="1" parent="layer4_data">
+          <mxGeometry x="60" y="45" width="360" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="data_stream" value="Real-Time Event Streaming&#xa;(Apache Kafka Message Bus)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5CBA7;strokeColor=#D35400;fontColor=#6E2C00;" vertex="1" parent="layer4_data">
+          <mxGeometry x="460" y="45" width="360" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="data_cloud" value="Multi-Cloud Infrastructure &amp; Security&#xa;(Kubernetes, Zero Trust IAM &amp; Vaults)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5CBA7;strokeColor=#D35400;fontColor=#6E2C00;" vertex="1" parent="layer4_data">
+          <mxGeometry x="860" y="45" width="300" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- Connections / Information Flows -->
+        <mxCell id="c1" edge="1" parent="1" source="biz_strategy" target="ana_gap">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="ana_pred" target="app_ai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="app_micro" target="data_stream">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="data_stream" target="ana_perf">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="480"/>
+              <mxPoint x="770" y="480"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
